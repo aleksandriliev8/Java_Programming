@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>geometry</OriginalElement>
+  <nodes>
+    <node x="366.36934306569344" y="363.4948905109489">geometry.Line</node>
+    <node x="120.5" y="-7.27007299270074">geometry.Point</node>
+    <node x="-199.88686131386868" y="298.11386861313866">geometry.Rectangle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="geometry.Rectangle" target="geometry.Point" relationship="TO_ONE">
+      <point x="-64.25" y="-153.0" />
+      <point x="-135.63686131386868" y="239.0" />
+      <point x="158.0" y="239.0" />
+      <point x="-37.5" y="93.0" />
+    </edge>
+    <edge source="geometry.Line" target="geometry.Point" relationship="TO_ONE">
+      <point x="-40.5" y="-129.0" />
+      <point x="406.86934306569344" y="239.0" />
+      <point x="158.0" y="239.0" />
+      <point x="-37.5" y="93.0" />
+    </edge>
+    <edge source="geometry.Rectangle" target="geometry.Point" relationship="CREATE">
+      <point x="64.25" y="-153.0" />
+      <point x="-7.136861313868678" y="259.0" />
+      <point x="233.0" y="259.0" />
+      <point x="37.5" y="93.0" />
+    </edge>
+    <edge source="geometry.Line" target="geometry.Point" relationship="CREATE">
+      <point x="40.5" y="-129.0" />
+      <point x="487.86934306569344" y="259.0" />
+      <point x="233.0" y="259.0" />
+      <point x="37.5" y="93.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.7429501084598699" showDependencies="true" x="152.0" y="401.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

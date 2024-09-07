@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CipherApplication">
+   <children>
+      <GridPane layoutX="-2.0" layoutY="-2.0" prefHeight="500.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="78.4" minHeight="10.0" prefHeight="78.4" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.60001220703126" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="270.4000183105469" minHeight="10.0" prefHeight="239.80000000000004" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="93.60000000000002" minHeight="10.0" prefHeight="69.59998779296876" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="78.39997558593751" minHeight="10.0" prefHeight="57.600012207031284" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="captiontxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Route Cipher" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="385.0" />
+               </GridPane.margin>
+            </Text>
+            <Label fx:id="keylbl" text="Cipher key" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="190.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="encrypttxt" prefHeight="261.0" prefWidth="435.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea fx:id="decryptTxt" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" right="8.0" />
+               </GridPane.margin>
+            </TextArea>
+            <Button fx:id="endBtn" mnemonicParsing="false" onAction="#endOnAction" prefHeight="26.0" prefWidth="400.0" text="Quit" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="380.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="encryptBtn" mnemonicParsing="false" onAction="#encryptOnAction" text="Encrypt" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="155.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="50.0" right="50.0" top="3.0" />
+               </padding></Button>
+            <Button fx:id="decryptBtn" mnemonicParsing="false" onAction="#decryptOnAction" text="Decrypt" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="155.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="3.0" left="50.0" right="50.0" top="3.0" />
+               </padding></Button>
+            <TextField fx:id="keyInput" onAction="#keyOnAction" prefHeight="26.0" prefWidth="132.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" right="275.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
